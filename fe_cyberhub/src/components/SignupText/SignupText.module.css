@@ -1,0 +1,10 @@
+.signupText {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signupText a {
+  color: #007bff;
+  text-decoration: none;
+}

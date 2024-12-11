@@ -1,0 +1,123 @@
+/* Tổng container của trang chi tiết sản phẩm */
+.productDetailContainer {
+  padding: 20px; /* Khoảng cách bên trong phần chi tiết sản phẩm */
+  margin-bottom: -400px;
+}
+
+/* Phần breadcrumb để hiển thị đường dẫn điều hướng */
+.breadcrumb {
+  margin-bottom: 15px; /* Khoảng cách dưới của breadcrumb */
+  font-size: 20px; /* Kích thước chữ của breadcrumb */
+  margin-left: 200px;
+}
+
+.breadcrumb a {
+  text-decoration: none; /* Loại bỏ gạch chân cho link */
+  color: #007bff; /* Màu xanh cho link */
+}
+
+/* Bố cục chính của phần chi tiết sản phẩm (hình ảnh và thông tin) */
+.productDetailContent {
+  display: flex; /* Bố trí hình ảnh và thông tin sản phẩm theo hàng ngang */
+  gap: 20px; /* Khoảng cách giữa phần hình ảnh và phần thông tin */
+}
+
+/* Phần hình ảnh của sản phẩm */
+.productImages {
+  flex: 1; /* Chiếm 1 phần ngang so với phần thông tin */
+}
+
+/* Ảnh chính của sản phẩm */
+.mainImage {
+  width: 600px; /* Ảnh chiếm toàn bộ chiều rộng của phần hình ảnh */
+  height: auto; /* Tự động điều chỉnh chiều cao theo tỉ lệ */
+  margin-left: 150px;
+}
+
+/* Ảnh thumbnail (ảnh nhỏ) bên dưới ảnh chính */
+.thumbnailImages {
+  display: flex;               /* Sử dụng flex để xếp hàng ngang các ảnh */      
+  margin-left: 200px;
+  gap: 5px;                     /* Giảm khoảng cách giữa các ảnh */
+  margin-top: -50px;             /* Khoảng cách phía trên của các ảnh thumbnail */
+ 
+}
+
+.thumbnailImages img {
+  width: 70px;                  /* Giữ nguyên kích thước của ảnh thumbnail */
+  height: auto;
+  margin-left: 5px;             /* Giảm khoảng cách giữa các ảnh */
+  border: 1px solid #ccc;
+}
+
+/* Phần thông tin của sản phẩm */
+.productInfo {
+  flex: 1; /* Chiếm 1 phần ngang so với phần hình ảnh */
+}
+
+/* Bố cục của phần giá tiền */
+/* Điều chỉnh phần bố cục giá */
+.priceContainer {
+  display: flex;
+  flex-direction: column; /* Chuyển từ hàng ngang sang hàng dọc để giá gốc nằm dưới giá giảm */
+  align-items: flex-start; /* Căn lề trái các thành phần bên trong */
+  gap: 5px; /* Giảm khoảng cách giữa các giá */
+}
+
+/* Giá đã giảm của sản phẩm */
+.discountPrice {
+  font-size: 24px; /* Kích thước chữ của giá đã giảm */
+  font-weight: bold; /* Chữ đậm */
+  color: red; /* Màu đỏ cho giá đã giảm */
+}
+
+/* Giá gốc của sản phẩm (trước khi giảm) */
+.originalPrice {
+  font-size: 18px; /* Kích thước chữ của giá gốc */
+  text-decoration: line-through; /* Thêm gạch ngang cho giá gốc */
+  color: #888; /* Màu xám cho giá gốc */
+}
+
+/* Tỷ lệ giảm giá của sản phẩm */
+.discount {
+  font-size: 16px; /* Kích thước chữ của phần tỷ lệ giảm giá */
+  color: green; /* Màu xanh cho phần giảm giá */
+}
+
+/* Nút "Mua Ngay" */
+.buyNowButton {
+  background-color: red; /* Màu nền đỏ */
+  color: white; /* Màu chữ trắng */
+  padding: 10px 20px; /* Khoảng cách bên trong nút */
+  font-size: 20px; /* Tăng kích thước chữ nút Mua Ngay */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Khoảng cách trên của nút */
+}
+
+/* Danh sách các phần quà tặng */
+.gifts, .warranty, .promotions {
+  list-style-type: none; /* Loại bỏ ký hiệu đầu dòng (bullet point) */
+  padding: 0; /* Loại bỏ khoảng cách padding bên trong */
+}
+
+/* Các phần tử bên trong danh sách quà tặng */
+.gifts li, .warranty li, .promotions li {
+  margin-bottom: 10px; /* Khoảng cách dưới của mỗi phần tử trong danh sách */
+}
+
+/* Màu sắc và ký hiệu của từng phần trong danh sách quà tặng */
+.gifts li {
+  color: orange; /* Màu cam cho phần quà tặng */
+}
+
+/* Các thông tin bảo hành và hỗ trợ */
+.warranty li {
+  color: green; /* Màu xanh lá cho phần bảo hành */
+}
+
+/* Danh sách khuyến mãi */
+.promotions li {
+  color: blue; /* Màu xanh dương cho phần khuyến mãi */
+}

@@ -1,0 +1,52 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .filterSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filterGroup {
+    width: 20%;
+  }
+  
+  .filterGroup label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .filterGroup select {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .filterButton {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .keyboardGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .keyboardCard {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .keyboardImage {
+    width: 100%;
+    height: auto;
+  }
+  

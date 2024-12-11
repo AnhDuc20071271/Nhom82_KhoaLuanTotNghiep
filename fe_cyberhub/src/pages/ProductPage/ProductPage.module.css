@@ -1,0 +1,46 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: -350px;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filterItem {
+  width: 20%;
+}
+
+.filterItem label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filterItem select {
+  width: 100%;
+  padding: 8px;
+}
+
+.applyFilterButton {
+  padding: 10px 20px;
+  background-color: red !important;
+  color: white; /* Màu chữ trắng */
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu */
+}
+
+.applyFilterButton:hover {
+  background-color: darkred; /* Màu nền khi hover */
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

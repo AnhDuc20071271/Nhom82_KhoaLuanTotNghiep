@@ -1,0 +1,12 @@
+/* LaptopCard.module.css */
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  

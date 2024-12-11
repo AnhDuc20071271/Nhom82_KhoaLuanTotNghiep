@@ -1,0 +1,139 @@
+.checkoutContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: -450px;
+  }
+  
+  .cartSteps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stepItem {
+    text-align: center;
+  }
+  
+  .stepCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .stepNumber {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .stepLine {
+    width: 40px;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 14px;
+  }
+  
+  .activeStep .stepCircle {
+    background-color: red;
+  }
+  
+  .completedStep .stepCircle {
+    background-color: green;
+  }
+  
+  .orderForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .customerInfo, .deliveryInfo {
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .inputGroup input, .inputGroup select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .totalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .totalPriceLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .totalPriceValue {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .totalPriceValue span {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+.backButton {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  .orderButton {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .checkboxItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkboxItem input {
+    margin-right: 10px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }

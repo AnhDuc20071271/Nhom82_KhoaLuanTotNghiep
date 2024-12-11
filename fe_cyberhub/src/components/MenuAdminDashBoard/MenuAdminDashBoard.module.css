@@ -1,0 +1,38 @@
+.sidebar {
+    background-color: #2c3e50;
+    height: 100%;
+    padding-top: 0; /* Đảm bảo không có khoảng trống trên cùng */
+}
+
+.menuTitle {
+    padding-left: 20px;
+    color: #FFF;
+    margin-top: 10px; /* Đảm bảo có khoảng cách nhỏ */
+}
+
+.menuList {
+    color: #FFF;
+    margin-top: 10px; /* Tạo khoảng cách nhỏ dưới tiêu đề General */
+}
+
+.menuDivider {
+    border: 0;
+    height: 2px; /* Độ dày của đường gạch ngang */
+    background-color: rgba(255, 255, 255, 0.3); /* Màu đậm hơn */
+    margin: 10px 0;
+}
+
+
+.profileContainer {
+    background-color: #34495e;
+    padding: 10px 20px; /* Giảm padding nếu cần */
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.profileContainer .avatar {
+    margin-right: 10px;
+}
+

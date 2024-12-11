@@ -1,0 +1,110 @@
+.completeContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: -450px;
+  }
+  
+  .cartSteps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stepItem {
+    text-align: center;
+  }
+  
+  .stepCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .stepNumber {
+    font-size: 16px;
+  }
+  
+  .stepLine {
+    width: 50px;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 20px;
+  }
+  
+  .completedStep .stepCircle {
+    background-color: green;
+  }
+  
+  .completedLine {
+    background-color: green;
+  }
+  
+  .successMessage {
+    text-align: center;
+    background-color: #e0ffe0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #00c000;
+  }
+  
+  .orderInfo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .orderInfo h4 {
+    margin-bottom: 10px;
+  }
+  
+  .totalPrice {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .unpaidNote {
+    color: #ff0000;
+    font-size: 14px;
+    background-color: #fff2f2;
+    padding: 10px;
+    border: 1px dashed #ff0000;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .chatButton,
+  .continueButton {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .chatButton {
+    background-color: white;
+    border: 1px solid #007bff;
+    color: #007bff;
+  }
+  
+  .continueButton {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+  }
+  

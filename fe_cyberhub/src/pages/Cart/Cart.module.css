@@ -1,0 +1,184 @@
+.cartContainer {
+  width: 80%; /* Đặt chiều rộng của container giỏ hàng là 80% của trang */
+  margin: 0 auto; /* Căn giữa container giỏ hàng */
+  margin-bottom: -350px;
+}
+
+.cartHeader {
+  text-align: center; /* Căn giữa tiêu đề của giỏ hàng */
+}
+
+.cartItem {
+  display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+  justify-content: space-between; /* Căn đều các phần tử, khoảng cách tự động giữa chúng */
+  align-items: center; /* Căn giữa các phần tử theo trục dọc */
+  padding: 20px; /* Tạo khoảng cách bên trong xung quanh phần tử */
+  border-bottom: 1px solid #ddd; /* Tạo đường viền dưới mờ ngăn cách giữa các sản phẩm trong giỏ */
+}
+
+.itemImage {
+  width: 170px; /* Đặt chiều rộng của ảnh sản phẩm */
+  height: auto; /* Tự động điều chỉnh chiều cao dựa trên chiều rộng để giữ tỉ lệ */
+}
+
+.itemDetails {
+  flex: 1; /* Cho phép phần chi tiết của sản phẩm chiếm toàn bộ không gian còn lại */
+  margin-left: 20px; /* Tạo khoảng cách giữa hình ảnh sản phẩm và chi tiết sản phẩm */
+
+}
+.itemName {
+  font-size: 18px; /* Kích thước chữ của tên sản phẩm */
+  font-weight: bold; /* Đặt chữ đậm */
+  color: #333; /* Màu chữ của tên sản phẩm */
+  margin-bottom: -40px; /* Tạo khoảng cách dưới cho tên sản phẩm */
+  margin-left: -10px;
+  
+  /* Điều chỉnh để giới hạn chiều rộng và tự động xuống dòng */
+  white-space: normal; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Tự động xuống dòng nếu từ quá dài */
+  max-width: 250px; /* Giới hạn chiều rộng của tên sản phẩm */
+}
+
+.itemPrices {
+  display: flex;
+  flex-direction: column; /* Xếp giá theo chiều dọc */
+  align-items: flex-start; /* Căn chỉnh bên trái */
+  margin-left: 1000px; /* Giữ nguyên nếu muốn căn lề bên trái */
+ 
+}
+
+.discountPrice {
+  font-size: 30px; /* Giá đã giảm */
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px; /* Thêm khoảng cách dưới */
+}
+
+.originalPrice {
+  font-size: 20px; /* Giá gốc */
+  color: #888; /* Màu xám cho giá gốc */
+  text-decoration: line-through; /* Gạch ngang giá gốc */
+  margin-bottom: 0; /* Loại bỏ margin-bottom không cần thiết */
+}
+
+
+
+.quantityControl {
+  display: flex; /* Sắp xếp các nút và số lượng sản phẩm theo hàng ngang */
+  align-items: center; /* Căn giữa các nút điều chỉnh số lượng theo trục dọc */
+}
+
+.quantityControl button {
+  padding: 5px 10px; /* Tạo khoảng cách bên trong cho các nút thay đổi số lượng */
+}
+
+.quantityControl span {
+  margin: 0 10px; /* Tạo khoảng cách ngang giữa các nút và số lượng sản phẩm */
+}
+
+.removeButton {
+  background-color: #f44336; /* Đặt màu nền đỏ cho nút xoá sản phẩm */
+  color: white; /* Màu chữ trắng cho nút xoá */
+  padding: 5px 10px; /* Tạo khoảng cách bên trong nút xoá */
+  border: none; /* Loại bỏ viền cho nút */
+  cursor: pointer; /* Khi hover chuột, con trỏ chuyển thành hình bàn tay */
+  margin-left: 1000px;
+}
+
+.cartSteps {
+  display: flex; /* Hiển thị các bước thanh toán theo hàng ngang */
+  justify-content: center; /* Căn giữa các bước trong thanh toán */
+  margin-top: 20px; /* Tạo khoảng cách phía trên */
+}
+
+.stepItem {
+  text-align: center; /* Căn giữa nội dung bên trong mỗi bước */
+  margin: 0 10px; /* Tạo khoảng cách giữa các bước */
+}
+
+.stepCircle {
+  width: 30px; /* Đặt chiều rộng của vòng tròn đại diện cho số bước */
+  height: 30px; /* Đặt chiều cao tương ứng để tạo hình tròn */
+  border-radius: 50%; /* Tạo hình tròn bằng cách bo góc 100% */
+  background-color: #ddd; /* Màu nền mặc định xám cho các bước */
+  display: flex; /* Sắp xếp nội dung bên trong theo hàng ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  margin: 0 auto; /* Căn giữa vòng tròn trong mỗi bước */
+}
+
+.stepNumber {
+  font-size: 16px; /* Đặt kích thước chữ cho số thứ tự bước */
+}
+
+.stepLine {
+  width: 40px; /* Chiều rộng của đường thẳng giữa các bước */
+  height: 2px; /* Độ dày của đường nối giữa các bước */
+  background-color: #ddd; /* Màu nền của đường thẳng nối */
+  margin-top: 14px; /* Căn chỉnh đường nối với trung tâm của vòng tròn */
+}
+
+.activeStep .stepCircle {
+  background-color: red; /* Màu nền đỏ cho bước hiện tại (bước đang thực hiện) */
+  color: white; /* Màu chữ trắng cho bước hiện tại */
+}
+
+.cartSummary {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.totalPriceLabel {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+  margin-bottom: -50px;
+}
+
+.totalPriceValue {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+.totalPriceValue span {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.checkoutButton {
+  background-color: red;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+}
+
+.continueButton {
+  background-color: blue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+}
+

@@ -1,0 +1,41 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: -300px;
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filterItem {
+    width: 20%; /* Điều chỉnh độ rộng của mỗi phần tử bộ lọc */
+}
+
+.filterItem label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filterItem select {
+    width: 100%;
+    padding: 8px;
+}
+
+.applyFilterButton {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

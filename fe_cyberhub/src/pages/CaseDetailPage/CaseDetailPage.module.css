@@ -1,0 +1,130 @@
+/* Tổng quan chung */
+.caseDetailContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .breadcrumb span {
+    color: #333;
+  }
+  
+  /* Chi tiết sản phẩm */
+  .caseDetailContent {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .caseImages {
+    flex: 1;
+  }
+  
+  .mainImage {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .thumbnailImages {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnailImages img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Thông tin sản phẩm */
+  .caseInfo {
+    flex: 1;
+  }
+  
+  .caseInfo h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .priceContainer {
+    margin-bottom: 15px;
+  }
+  
+  .discountPrice {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .originalPrice {
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #999;
+  }
+  
+  .discount {
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 3px 6px;
+    margin-left: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Nút MUA NGAY */
+  .buyNowButton {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .buyNowButton:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Nút xem chi tiết */
+  .viewDetailsButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .viewDetailsButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Thông tin thêm */
+  .caseInfo p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

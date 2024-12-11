@@ -1,0 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Ngăn kéo dài ngang gây ra khoảng trắng */
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Đảm bảo các sản phẩm được căn giữa */
+}
+
+  
+  .product-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    margin: 5px 0;
+  }
+/* Đảm bảo toàn bộ trang chiếm hết chiều cao của màn hình */
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Chiều cao tối thiểu là chiều cao của cửa sổ trình duyệt */
+
+}
+
+.mainContainer {
+  flex-grow: 1; /* Đảm bảo phần chính chiếm khoảng trống còn lại */
+  padding: 20px;
+}
+
+.footer {
+  margin-top: 400px; /* Đẩy footer xuống cuối trang */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

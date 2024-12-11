@@ -1,0 +1,245 @@
+.orderDetailContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.orderInfo, .product, .deliveryStatus, .paymentInfo, .customerInfo {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+}
+
+.orderInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderId span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.deliveryStatus {
+    display: flex;
+    justify-content: center; /* Đưa hai trạng thái gần nhau hơn */
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    gap: 20px; /* Giảm khoảng cách giữa các trạng thái */
+}
+.deliveryStatus1 span {
+    font-size: 14px;
+    font-weight: bold;
+    color:#4caf50;
+    margin-left: -5px;
+}
+.deliveryStatus span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.statusIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #e0f7e9; /* Màu nền cho trạng thái đã hoàn thành */
+    color: #4caf50; /* Màu xanh lá */
+    font-size: 16px;
+}
+.statusLine {
+    width: 50px; /* Độ dài của đường nối */
+    border-top: 1px dashed #4caf50; /* Gạch nối đứt */
+    margin: 0 10px; /* Khoảng cách giữa các trạng thái */
+    height: 0; /* Đảm bảo chỉ là một đường kẻ */
+    margin-left: -10px;
+    margin-bottom: 15px;
+}
+
+.statusLine.completed {
+    border-top: 1px dashed #4caf50; /* Màu xanh cho trạng thái hoàn thành */
+}
+
+
+.productList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.productImage {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.productInfo h4 {
+    font-size: 16px;
+    color: #1a73e8;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.quantity {
+    font-size: 14px;
+    color: #555;
+    margin-left: 855px;
+}
+
+.paymentInfo {
+    display: flex !important;
+    flex-direction: column !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    background-color: #fff !important;
+    padding: 15px !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 8px !important;
+    gap: 5px !important; /* Khoảng cách giữa các mục */
+    text-align: left !important; /* Đảm bảo nội dung căn trái */
+}
+
+.paymentItem {
+    display: flex !important;
+    justify-content: flex-start !important; /* Căn trái nội dung */
+    align-items: center !important;
+    gap: 10px !important; /* Thêm khoảng cách giữa nhãn và giá trị */
+    padding: 2px 0 !important; /* Giảm khoảng cách dọc */
+    margin: 0 !important; /* Loại bỏ margin thừa */
+}
+
+.paymentItem span:first-child {
+    display: flex !important;
+    align-items: center !important;
+    font-weight: bold !important;
+    color: #555 !important;
+    text-align: left !important;
+}
+
+.paidAmount {
+    color: green;
+    font-weight: bold;
+}
+
+.customerInfo p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.customerInfo p strong {
+    margin-right: 10px;
+}
+
+.customerInfo p svg {
+    margin-right: 10px;
+    color: #333;
+}
+
+.backButton {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.backButton:hover {
+    background-color: #e0e0e0;
+}
+
+.section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.statusIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.statusIcons span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviewButton, .buyAgainButton {
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reviewButton:hover, .buyAgainButton:hover {
+    background-color: #ef4444;
+    color: white;
+}
+
+.paymentInfo h3, .customerInfo h3 {
+    margin-bottom: 10px;
+}
+.backButton {
+    display: inline-flex; /* Đảm bảo nút có thể hiển thị gọn gàng */
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5; /* Màu nền nhẹ */
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+    text-decoration: none; /* Xóa gạch chân (nếu có) */
+}
+
+.backButton:hover {
+    background-color: #e0e0e0;
+}
+
+.orderDetailContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.backButtonWrapper {
+    display: flex;
+    justify-content: flex-start; /* Đưa nút về đầu dòng bên trái */
+    margin-bottom: 20px;
+}

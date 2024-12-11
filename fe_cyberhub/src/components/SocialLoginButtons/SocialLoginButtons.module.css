@@ -1,0 +1,42 @@
+.socialLoginContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.googleButtonContainer, .facebookButtonContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.googleButtonContainer button, .facebookButtonContainer button {
+  width: 100%; /* Đảm bảo hai nút có chiều rộng giống nhau */
+}
+
+.facebookButton {
+  background-color: #3b5998;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%; /* Đảm bảo chiều rộng nút Facebook tương tự nút Google */
+  height: 40px; /* Đảm bảo chiều cao nút Facebook tương tự nút Google */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebookButton:hover {
+  background-color: #2d4373;
+}
+
+.facebookIcon {
+  margin-right: 10px; /* Khoảng cách giữa icon và text */
+  font-size: 18px;
+}

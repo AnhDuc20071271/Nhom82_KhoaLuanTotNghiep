@@ -1,0 +1,247 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  width: 100%;
+}
+.header {
+  background-color: #d32f2f; 
+
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; 
+}
+
+.logo img {
+  height: 80px;
+  margin-left: 50px;
+  margin-right: -40px; /* Thay đổi giá trị này */
+  padding-top: 10px;
+}
+
+
+
+.menuButton {
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 150px;
+  margin-right: -290px;
+}
+
+.searchContainer {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 300px;
+  margin-right: -50px;
+}
+
+.searchInput {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.searchButton {
+  background-color: white;
+  color: #d32f2f;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.searchResults {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 40%; /* Cùng độ rộng với thanh tìm kiếm */
+  top: calc(100% + 10px); /* Đưa dropdown xuống dưới */
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 330px;
+  margin-top: -30px;
+}
+
+.searchResults ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+
+.searchResults li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.searchResults li:hover {
+  background-color: #f5f5f5;
+}
+
+
+.icons {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.iconItem {
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+  color: white;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.iconItem i {
+  font-size: 20px; 
+  margin-right: 5px;
+}
+
+.iconItem span {
+  font-size: 16px; 
+  display: inline-block;
+  line-height: 1; 
+}
+
+.bottomBar {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #d32f2f;
+  width: 100%;
+}
+
+.bottomBar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  padding: 0;
+  margin: 0;
+}
+
+.bottomBar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.bottomBar ul li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  right: -15px; /* Điều chỉnh khoảng cách giữa dấu phân cách */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottomBar ul li:last-child::after {
+  display: none; /* Xóa dấu phân cách sau mục cuối cùng */
+
+}
+
+.separator {
+  border-left: 1px solid #d3d3d3;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 10px); /* Điều chỉnh khoảng cách menu nằm ngay dưới nút */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Đảm bảo menu có kích thước phù hợp */
+  z-index: 1000;
+  padding: 10px 0;
+  max-height: none; /* Loại bỏ giới hạn chiều cao */
+  overflow-y: visible; /* Hiển thị đầy đủ */
+  margin-left: 100px;
+
+}
+
+.dropdownMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdownMenu li {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333; /* Chữ màu đen */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownMenu li i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333; /* Màu biểu tượng đen */
+}
+
+.dropdownMenu li:hover {
+  background-color: #f1f1f1; /* Nền xám nhạt khi hover */
+}
+.logoutButton {
+  background: none;
+  border: none;
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.username {
+  margin-right: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.productImage {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.discountedPrice {
+  color: red;
+  font-weight: bold;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 5px;
+}

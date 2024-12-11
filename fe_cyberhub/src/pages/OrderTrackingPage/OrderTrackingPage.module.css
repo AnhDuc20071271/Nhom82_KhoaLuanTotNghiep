@@ -1,0 +1,162 @@
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: -400px;
+}
+
+.breadcrumb {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: blue; /* Màu xanh chỉ áp dụng cho link "Trang chủ" */
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline; /* Gạch chân khi hover để UX tốt hơn */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+}
+
+.formContainer {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.primaryButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff3d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: #e83500;
+}
+
+.separator {
+  text-align: center;
+  margin: 15px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.secondaryButton {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #ff3d00;
+  border: 2px solid #ff3d00;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background-color: #ff3d00;
+  color: white;
+}
+
+.paymentInfo {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentInfo p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.customerInfo {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.customerInfo p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  flex: 1 1 calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #666;
+}

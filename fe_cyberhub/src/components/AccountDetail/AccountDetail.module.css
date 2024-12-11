@@ -1,0 +1,138 @@
+.accountDetailContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .mainContent {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    margin-bottom: -450px;
+  }
+  
+  .leftSidebar {
+    width: 20%;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .sidebarMenu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menuItem {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .menuItem:hover {
+    background-color: #e6e6e6;
+    border-radius: 4px;
+  }
+  
+  .accountContent {
+    width: 80%;
+    padding-left: 20px;
+  }
+  
+  .accountHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userAvatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .userLevel {
+    background-color: #e6e6e6;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .accountSummary {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .orderSummary, .totalAmount {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .orderSummary h2, .totalAmount h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .orderSummary p, .totalAmount p {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  /* Giao diện cho các mục moreOptions */
+  .moreOptions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .optionItem {
+    width: 14%;
+    text-align: center;
+    background-color: #f1f7fe;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .optionItem:hover {
+    background-color: #e6f0fd;
+  }
+  
+  .optionItem h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .optionItem span {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  .optionItem:nth-child(4) span {
+    background-color: #ff6600; /* Màu HOT */
+  }
+  
+  .optionItem:nth-child(5) span, 
+  .optionItem:nth-child(6) span {
+    background-color: #00c300; /* Màu MỚI */
+  }
+  

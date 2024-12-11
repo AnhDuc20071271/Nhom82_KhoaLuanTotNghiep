@@ -1,0 +1,11 @@
+/* src/components/ProductFilter/ProductFilter.module.css */
+.filterButton {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filterField {
+    margin-top: 1rem;
+  }
+  

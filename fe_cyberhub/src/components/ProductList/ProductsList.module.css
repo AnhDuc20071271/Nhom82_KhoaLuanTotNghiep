@@ -1,0 +1,99 @@
+/* ProductsList.module.css */
+
+/* Điều chỉnh .sectionContainer */
+.sectionContainer {
+  padding: 20px 0;
+
+}
+
+/* Tiêu đề cho từng danh mục */
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: red;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* Gạch ngang ngăn cách giữa các danh mục */
+.categorySeparator {
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Đảm bảo .productCard có position: relative để chứa badge */
+.productCard {
+  position: relative;
+  width: 290px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.productCard:hover {
+  transform: scale(1.02);
+}
+
+/* Badge giảm giá ở góc trái trên cùng */
+.discountBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Giá sau khi giảm */
+.discountedPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Giá gốc */
+.originalPrice {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.productImage {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.productCard h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.productCard p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.category {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Liên kết sản phẩm */
+.productLink {
+  text-decoration: none;
+  color: inherit;
+}

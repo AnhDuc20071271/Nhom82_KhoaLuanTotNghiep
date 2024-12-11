@@ -1,0 +1,186 @@
+/* ProductDetailPage.module.css */
+
+.productDetailContainer {
+  padding: 20px;
+  margin-bottom: -450px;
+}
+
+.breadcrumb {
+  margin-bottom: 15px;
+  font-size: 20px; /* Tăng kích thước chữ breadcrumb */
+  margin-left: 200px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.productDetailContent {
+  display: flex;
+  gap: 20px;
+}
+
+.productImages {
+  flex: 0.6; /* Giảm kích thước phần hiển thị hình ảnh chính */
+}
+
+.imageContainer {
+  position: relative;
+  width: 80%;
+  margin-left: 200px;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+}
+
+/* Badge giảm giá */
+.discountBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.thumbnailImages {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+.thumbnailImages img {
+  width: 50px; /* Giảm kích thước thumbnail */
+  height: auto;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+
+.productInfo {
+  flex: 1.4; /* Tăng kích thước phần thông tin sản phẩm */
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.discountPrice {
+  font-size: 25px; /* Tăng kích thước chữ giá sau giảm */
+  font-weight: bold;
+  color: red;
+  margin-left: 200px;
+}
+
+.originalPrice {
+  font-size: 20px; /* Tăng kích thước giá gốc */
+  text-decoration: line-through;
+  color: #999;
+}
+
+.discount {
+  font-size: 16px; /* Tăng kích thước chữ giảm giá */
+  color: green;
+}
+
+.buyNowButton {
+  background-color: red;
+  color: white;
+  padding: 10px 25px;
+  font-size: 20px; /* Tăng kích thước chữ nút Mua Ngay */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.productDetails {
+  margin-top: 20px;
+  font-size: 20px; /* Tăng kích thước chữ cho phần thông tin sản phẩm */
+  margin-left: 200px;
+}
+
+.productDetails p {
+  margin: 3px 0;
+}
+
+.promotions {
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+.promotions p {
+  color: green;
+  font-size: 20px; /* Tăng kích thước chữ phần khuyến mãi */
+}
+
+.promotions span {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.promotions p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.promotions p a:hover {
+  text-decoration: underline;
+}
+
+.productInfo h1 {
+  font-size: 25px; /* Giảm kích thước của tiêu đề */
+  font-weight: bold;
+  margin-left: 200px;
+}
+
+.techSpecs {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.techSpecs h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.specsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specsTable td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.specKey {
+  font-weight: bold;
+  width: 150px;
+}
+
+.viewDetailsButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.viewDetailsButton:hover {
+  background-color: #0056b3;
+}

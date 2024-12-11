@@ -1,0 +1,33 @@
+/* LaptopPage.module.css */
+.container {
+  padding: 20px;
+}
+
+.filterContainer {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ProductCard.module.css */
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}

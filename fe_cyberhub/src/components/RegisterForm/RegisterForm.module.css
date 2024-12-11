@@ -1,0 +1,28 @@
+.registerForm {
+    margin: 20px 0;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: -10px;
+  }
+  
+  .checkboxLabel {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .registerBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

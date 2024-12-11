@@ -1,0 +1,16 @@
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm orm_2_1.xsd"
+    version="2.1">
+
+    <sql-result-set-mapping name="OrderHistoryMapping">
+        <entity-result entity-class="com.cyberhub_backend.dto.OrderHistoryDTO">
+            <field-result name="orderId" column="OrderID"/>
+            <field-result name="orderDate" column="OrderDate"/>
+            <field-result name="totalPrice" column="TotalPrice"/>
+            <field-result name="status" column="OrderStatus"/>
+            <field-result name="invoiceNumber" column="InvoiceNumber"/>
+            <field-result name="note" column="Note"/>
+        </entity-result>
+    </sql-result-set-mapping>
+</entity-mappings>

@@ -1,0 +1,99 @@
+.paymentContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: -450px;
+  }
+  
+  .cartSteps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stepItem {
+    text-align: center;
+  }
+  
+  .stepCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stepNumber {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .stepLine {
+    width: 40px;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 14px;
+  }
+  
+  .completedStep .stepCircle {
+    background-color: green;
+  }
+  
+  .activeStep .stepCircle {
+    background-color: red;
+  }
+  
+  .activeLine {
+    background-color: red;
+  }
+  
+  .completedLine {
+    background-color: green;
+  }
+  
+  .orderInfo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .paymentForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .paymentMethod {
+    margin-bottom: 20px;
+  }
+  
+  .paymentSummary {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .paymentButton {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .backButton {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px; /* Khoảng cách giữa hai nút */
+}

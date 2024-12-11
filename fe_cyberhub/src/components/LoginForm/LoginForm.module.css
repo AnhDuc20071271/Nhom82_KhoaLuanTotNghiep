@@ -1,0 +1,36 @@
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.forgotPassword {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.forgotPassword a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+}

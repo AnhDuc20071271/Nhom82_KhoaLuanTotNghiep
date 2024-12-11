@@ -1,0 +1,66 @@
+.welcomeScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Nền mờ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1s ease; /* Hiệu ứng chuyển mượt */
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+    margin-right: 20px; /* Tạo khoảng cách giữa dot và text */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.welcomeText {
+    color: white;
+    font-size: 24px;
+}
+
+.slogan {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
